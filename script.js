@@ -94,7 +94,7 @@ if(countdown>0) {
     }, time);
 }
 else{
-    alert("Game Over");
+    alert("Partie terminée");
 hole.classList.remove('up');
 }
 }
@@ -110,8 +110,9 @@ taper.click(function () {
     if ($(this).hasClass('up')) {
 
         $(this).removeClass('up');
+        i++;
+        $('.score').text(i);
 
-        $('.score').text(i++);
 
     }
 
